@@ -62,4 +62,7 @@
          user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
 
+    <!-- Defines the custom pickup sensor used by various OEMs like OnePlus-->
+    <string name="config_dozePickupSensorType">com.oneplus.sensor.pickup</string>
+
 </resources>
