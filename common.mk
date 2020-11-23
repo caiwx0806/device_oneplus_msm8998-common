@@ -160,12 +160,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0
 
-# Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
-
 # Device Settings
 PRODUCT_PACKAGES += \
     DeviceSettings
@@ -189,8 +183,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8998 \
     libdisplayconfig \
     libhwc2on1adapter \
-    libgenlock \
-    liboverlay \
     libtinyxml \
     libqdMetaData \
     libqdMetaData.system \
@@ -214,7 +206,6 @@ PRODUCT_PACKAGES += \
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
-    fingerprintd \
     OnePlusPocketMode
 
 # For android_filesystem_config.h
@@ -274,11 +265,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
-# IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes
-
 # IRQ
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
@@ -314,7 +300,6 @@ PRODUCT_COPY_FILES += \
 
 # Media Extensions
 PRODUCT_PACKAGES += \
-    libavmediaserviceextensions \
     libmediametrics \
     libregistermsext \
     mediametrics
@@ -356,7 +341,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libextmedia_jni \
     libhypv_intercept \
     libmm-omxcore \
     libOmxAacEnc \
@@ -458,10 +442,6 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oneplus_msm8998
@@ -510,8 +490,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
     hostapd_cli \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     wificond \
     wpa_supplicant \
